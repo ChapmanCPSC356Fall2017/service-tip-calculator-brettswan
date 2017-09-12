@@ -75,6 +75,12 @@ public class MainScreen extends AppCompatActivity {
                     recommendedTipTextView.setText("Recommended tip amount is: $" + Double.toString((double) Math.round(tipValue * 100) / 100));
                     finalTotalTextView.setText("Your total bill is: $" + (Double.parseDouble(totalEditText.getText().toString()) + (double) Math.round(tipValue * 100) / 100));
                 }
+                //attempt to change tip amount when bill total is empty after having a value
+                if (strippedText.equals("")){
+                    tipValue = 0;
+                    recommendedTipTextView.setText("Recommended tip amount is: $" + Double.toString((double) Math.round(tipValue * 100) / 100));
+                    finalTotalTextView.setText("Your total bill is: $0");
+                }
             }
 
             @Override
