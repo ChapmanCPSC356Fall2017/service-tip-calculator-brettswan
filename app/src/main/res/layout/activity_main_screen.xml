@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.brettswan.tipcalculator.MainScreen"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#2d2d2d"
+    android:animateLayoutChanges="true">
+
+
+    <EditText
+        android:id="@+id/total_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tap to enter your pretip total"
+        android:textColorHint="#ff4470"
+        android:inputType="numberDecimal"
+        android:textColor="#ff4470"
+        android:textSize="26dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="Please rate your dining experience!"
+        android:textSize="24sp"></TextView>
+
+    <TextView
+        android:id="@+id/ratingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:textColor="#ff4470"></TextView>
+
+    <SeekBar
+        android:id="@+id/rating_SB"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="Slide the bar on the scale of 0-10"
+        android:textSize="18dp"
+        android:textColor="#ff4470"
+        android:gravity="center"></TextView>
+
+    <TextView
+        android:id="@+id/recommendedTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_margin="12dp"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <TextView
+        android:id="@+id/finalTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textSize="30dp"
+        android:textColor="#4dd158"
+        android:gravity="center"/>
+</LinearLayout>
